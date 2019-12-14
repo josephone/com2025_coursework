@@ -1,0 +1,22 @@
+<header>
+  <nav class="navbar navbar-light bg-light">
+    <ul>
+      <li>
+        <%= link_to(t('navbar.home'),root_path)%>
+      <% if !user_signed_in? %>
+     <li> <%= link_to(t('navbar.sign_up'),new_user_registration_path)%></li>
+     <li><%= link_to(t('navbar.sign_in'),new_user_session_path)%></li>
+     <% end %>
+     <li><%= link_to(t('navbar.contact_us'),contact_us_path)%></li>
+     <% if user_signed_in? %>
+       <li>
+     <%= link_to(t('navbar.sign_out'), destroy_user_session_path, method: :delete) %>
+     </li>
+     <%end%>
+   </ul>
+
+</nav>
+<% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-info") %>
+<% end %>
+</header>

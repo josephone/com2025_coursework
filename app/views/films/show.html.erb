@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%=t('film_info.film_title')%></strong>
+  <%= @film.Film_title %>
+</p>
+
+<p>
+  <strong><%=t('film_info.description')%></strong>
+  <%= @film.description %>
+</p>
+
+<p>
+  <strong><%=t('film_info.length')%></strong>
+  <%= @film.Length %>
+</p>
+<% if user_signed_in? %>
+  <%= link_to t('film_processes.edit'), edit_film_path(@film) %> |
+<%end%>
+
+<%= link_to t('general.back_button'), films_path %>

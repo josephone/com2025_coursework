@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+<%=stylesheet_link_tag "application.css"%>
+
+<h1><%=t('titles.home_page_title')%></h1>
+
+<table>
+  <thead>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%=t('titles.home_page_title')%></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/contact_us.scss">
+    <tr>
+      <th><%=t('film_info.film_title')%></th>
+      <th><%=t('film_info.description')%></th>
+      <th><%=t('film_info.length')%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <% @films.each do |film| %>
+      <tr>
+        <td><%= film.Film_title %></td>
+        <td><%= film.description %></td>
+        <td><%= film.Length %></td>
+        <td><%= link_to t('film_processes.show'), film %></td>
+        <% if user_signed_in? %>
+          <li>
+            <td><%= link_to t('film_processes.edit'), edit_film_path(film) %></td>
+            <td><%= link_to t('film_processes.delete'), film, method: :delete, data: { confirm: t('general.confirmation') } %></td>
+          </li>
+        <%end%>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if user_signed_in? %>
+<%= link_to t('general.new_film'), new_film_path %>
+<% end %>
