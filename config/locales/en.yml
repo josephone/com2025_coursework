@@ -67,9 +67,15 @@ en:
     created: Film was successfully created.
     updates: Film was successfully updated.
 
+  contact_form:
+    name: Name
+    email: Email
+    user_review: User Review
+
   contact:
     contact_us: Complete the following form to get in touch with us.
 
     request_contact:
       heading_message: Could you get in touch with me please?
+      email_not_sent: Email address was not provided
       email_sent: Thank you. We will be in touch shortly.

@@ -25,9 +25,12 @@ class ContactUsController < ApplicationController
     name = params[:name]
     email = params[:email]
     message = params[:message]
+    if email.blank?
+      flash[:notice] = I18n.t('contact.request_contact.email_not_sent')
+    else
     ContactMailer.contact_email(email, name, message).deliver_now
     flash[:notice] = I18n.t('contact.request_contact.email_sent')
-
+  end
   end
 end
     # Use callbacks to share common setup or constraints between actions.

@@ -53613,3 +53613,426 @@ No template found for ContactUsController#request_contact, rendering head :no_co
 Completed 204 No Content in 256ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/contact_us" for 127.0.0.1 at 2019-12-14 22:02:26 +0000
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:02:26 +0000
+Processing by ContactUsController#index as HTML
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering contact_us/index.html.erb within layouts/application
+  Rendered contact_us/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 517ms (Views: 510.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:02:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-12-14 22:02:31 +0000
+Processing by FilmsController#index as HTML
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:02:31 +0000
+  Rendering films/index.html.erb within layouts/application
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mFilm Load (18.6ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:27
+  Rendered films/index.html.erb within layouts/application (75.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 288ms (Views: 267.4ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:02:31 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-12-14 22:07:05 +0000
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (7.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:27
+  Rendered films/index.html.erb within layouts/application (137.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 310ms (Views: 264.4ms | ActiveRecord: 40.7ms)
+
+
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:07:06 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:07:06 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/contact_us" for 127.0.0.1 at 2019-12-14 22:07:07 +0000
+Processing by ContactUsController#index as HTML
+  Rendering contact_us/index.html.erb within layouts/application
+  Rendered contact_us/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:07:07 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/contact_us/new" for 127.0.0.1 at 2019-12-14 22:07:08 +0000
+Processing by ContactUsController#new as HTML
+  Rendering contact_us/new.html.erb within layouts/application
+  Rendered contact_us/_form.html.erb (2.0ms)
+  Rendered contact_us/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 119ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/request_contact_path" for 127.0.0.1 at 2019-12-14 22:07:35 +0000
+Processing by ContactUsController#request_contact as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e+0o5h+5217GFaCPH9WK84vUEAXNxbTmYdwFBEKHpVNAlc+utWBzlcdjNvEv17Yp+HSQ6aNjNqaucbkntFgfGQ==", "name"=>"Jamie Wiggins", "email"=>"jw0098@surrey.ac.uk", "message"=>"I hate coursework", "commit"=>"Submit"}
+  Rendering contact_mailer/contact_email.en.html.erb within layouts/mailer
+  Rendered contact_mailer/contact_email.en.html.erb within layouts/mailer (0.5ms)
+ContactMailer#contact_email: processed outbound mail in 14.0ms
+Sent mail to jk00687@surrey.ac.uk (14.8ms)
+Date: Sat, 14 Dec 2019 22:07:35 +0000
+From: messages@filmreviews.com
+To: jk00687@surrey.ac.uk
+Cc: jw0098@surrey.ac.uk
+Message-ID: <5df55d275ae7a_5d4b2ad6e25e7584504d1@heron087.mail>
+Subject: Contact email
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p>
+  Dear Film Reviews,
+</p>
+<p>
+  Could you get in touch with me please?
+</p>
+<dtName>:</dtName>
+<dd>
+  Jamie Wiggins
+</dd>
+<dt>Email:</dt>
+<dd>
+  jw0098@surrey.ac.uk
+</dd>
+<p>
+  I hate coursework
+</p>
+<p>Thanks,</p>
+<p>
+  Jamie Wiggins
+</p>
+
+  </body>
+</html>
+
+No template found for ContactUsController#request_contact, rendering head :no_content
+Completed 204 No Content in 257ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contact_us/new" for 127.0.0.1 at 2019-12-14 22:08:19 +0000
+Processing by ContactUsController#new as HTML
+  Rendering contact_us/new.html.erb within layouts/application
+  Rendered contact_us/_form.html.erb (0.8ms)
+  Rendered contact_us/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 232ms (Views: 228.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/request_contact_path" for 127.0.0.1 at 2019-12-14 22:08:27 +0000
+Processing by ContactUsController#request_contact as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QB+2VrhgO6Gk8r+EWkNnrCYeWBSQj/1K7yPSWM7ZQD8wcGPa013zTW9HUoJ8noroEB2HQdSyuEMax3AgzZJCAw==", "name"=>"Jamie Wiggins", "email"=>"", "message"=>"I give good massages", "commit"=>"Submit"}
+No template found for ContactUsController#request_contact, rendering head :no_content
+Completed 204 No Content in 233ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contact_us" for 127.0.0.1 at 2019-12-14 22:10:24 +0000
+Processing by ContactUsController#index as HTML
+  Rendering contact_us/index.html.erb within layouts/application
+  Rendered contact_us/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 303ms (Views: 299.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/contact_us.scss" for 127.0.0.1 at 2019-12-14 22:10:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/css/contact_us.scss"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/contact_us/new" for 127.0.0.1 at 2019-12-14 22:10:30 +0000
+Processing by ContactUsController#new as HTML
+  Rendering contact_us/new.html.erb within layouts/application
+  Rendered contact_us/_form.html.erb (0.8ms)
+  Rendered contact_us/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 144ms (Views: 142.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact_us/new" for 127.0.0.1 at 2019-12-14 22:39:50 +0000
+Processing by ContactUsController#new as HTML
+  Rendering contact_us/new.html.erb within layouts/application
+  Rendered contact_us/_form.html.erb (2.3ms)
+  Rendered contact_us/new.html.erb within layouts/application (56.4ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tSTRING_BEG, expecting ')'
+...:name, t('contact_form.name') ":" );@output_buffer.safe_appe...
+...                              ^
+/user/HS121/jk00687/com2025_coursework-master(2)/com2025_coursework-master/app/views/contact_us/_form.html.erb:5: syntax error, unexpected tSTRING_BEG, expecting ')'
+...mail, t('contact_form.email') ":");@output_buffer.safe_appen...
+...                              ^
+/user/HS121/jk00687/com2025_coursework-master(2)/com2025_coursework-master/app/views/contact_us/_form.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting ')'
+...t('contact_form.user_review') ":");@output_buffer.safe_appen...
+...                              ^:
+  app/views/contact_us/_form.html.erb:3:in `'
+  app/views/contact_us/new.html.erb:3:in `_app_views_contact_us_new_html_erb__127335106307014667_70127185996940'
+
+Started POST "/__better_errors/402780108a686bf8/variables" for 127.0.0.1 at 2019-12-14 22:39:50 +0000
+Started GET "/contact_us/new" for 127.0.0.1 at 2019-12-14 22:40:19 +0000
+Processing by ContactUsController#new as HTML
+  Rendering contact_us/new.html.erb within layouts/application
+  Rendered contact_us/_form.html.erb (2.3ms)
+  Rendered contact_us/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 259ms (Views: 256.1ms | ActiveRecord: 0.0ms)
+
+

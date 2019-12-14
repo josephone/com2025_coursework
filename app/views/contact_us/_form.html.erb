@@ -1,10 +1,10 @@
 <div class="container">
 <%= form_tag request_contact_path_path, method: 'post' do %>
-  <%= label_tag :name, "Name:" %>
+  <%= label_tag :name, t('contact_form.name') + ":" %>
   <%= text_field_tag :name, ""%>
-  <%= label_tag :email, "Email:"%>
+  <%= label_tag :email, t('contact_form.email') + ":"%>
   <%= email_field_tag :email, ""%>
-  <%= label_tag :message, "User review:"%>
+  <%= label_tag :message, t('contact_form.user_review') + ":"%>
   <%= text_field_tag :message, "", size: 100 %>
   <%= submit_tag "Submit" %>
   <% end %>
