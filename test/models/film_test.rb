@@ -1,5 +1,11 @@
 require 'test_helper'
 
+# Carries out various tests that will be used to check whether the film
+# can be successfully created if the correct values are provided.
+# These tests also check that an overall review is not allowed to be created
+# if the criteria for a film title, description and length is not met, as well
+# as if the fields are empty
+
 class FilmTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true

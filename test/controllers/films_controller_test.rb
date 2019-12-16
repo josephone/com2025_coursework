@@ -7,6 +7,7 @@ class FilmsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @film = films(:one)
     @user = users(:one)
+    sign_in @user
   end
 
     # Runs the test such that the contents of the page is checked to
@@ -23,7 +24,8 @@ test "should get film" do
 
 end
 
-  # 
+  # Runs the tests to check that the correct URL is being received
+  # by the get function
 
   test "should get new" do
     get new_film_url
@@ -34,6 +36,9 @@ end
     get films_url
     assert_response :success
   end
+
+  # Checks to see if a new film can be created by providing the correct
+  # set of parameters
 
     test "should create film" do
       assert_difference('Film.count') do
