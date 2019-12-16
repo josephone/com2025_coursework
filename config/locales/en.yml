@@ -44,7 +44,7 @@ en:
 
   film_info:
     film_title: Film title
-    description: Description
+    description: Review
     length: Length (mins)
 
   titles:
