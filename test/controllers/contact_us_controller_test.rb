@@ -1,3 +1,8 @@
+
+  # As the contact us page is only being used to provide a link
+  # to the contact form, there is a limited amount of tests that
+  # can be carried out.
+
 require 'test_helper'
 
 class ContactUsControllerTest < ActionDispatch::IntegrationTest
@@ -5,8 +10,10 @@ class ContactUsControllerTest < ActionDispatch::IntegrationTest
 
   setup do
     @contact_u = contact_us(:one)
-
   end
+
+  # Runs the test such that the contents of the page is checked to
+  # see that they appear as expected to the user
 
 test "should get contact" do
   get contact_us_url

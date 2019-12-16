@@ -1,5 +1,12 @@
+
+  <!-- This partial form allows a signed in user to create their own film review
+      which includes validation on each field. This is shown as an extension of
+      the 'films' page -->
+
 <%= form_with(model: film, local: true) do |form| %>
   <% if film.errors.any? %>
+
+  <!-- If any errors in the user responses to the form appear, the appropriate warning will appear -->
     <div id="error_explanation">
       <h2><%= pluralize(film.errors.count, "error") %> <%=t('general.prohibit_saving')%></h2>
 
@@ -10,6 +17,8 @@
       </ul>
     </div>
   <% end %>
+
+  <!-- Defines the actual form in which the user will enter data -->
 
   <div class="field">
     <%= form.label :Film_title %>

@@ -1,7 +1,11 @@
+<!-- This contains the overall code that will be applied consistently across the
+    entire site and all associated pages -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title><%=t('titles.app_title')%></title>
+    <!-- This line allows for a consistent zoom across all pages -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,12 +14,16 @@
     <%= javascript_include_tag :modernizr %>
     <%= javascript_include_tag "application" %>
   </head>
+  <!-- Includes the header partial across all pages -->
 <%= render "layouts/header" %>
   <body>
+    <!-- Provides the permissions for all pages to be able to show 'flash' messages
+        and notices to the user -->
     <% flash.each do |key, value| %>
   <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
   <%end%>
     <%= yield %>
+    <!-- Includes the footer partial across all pages -->
   <%= render "layouts/footer" %>
 
   </body>

@@ -1,13 +1,27 @@
+<!-- Defines a consistent footer that will be found on each page.
+    This has been defined as a partial so that it can be consistently
+    called by the overall application file to apply to all pages-->
+
 <header>
+
+  <!-- Defines the links that will be contained in the navigation bar that will
+      be found in the header of each page to allow for ease of access between
+      pages -->
   <nav class="navbar navbar-light bg-light">
     <ul>
       <li>
         <%= link_to(t('navbar.home'),root_path)%>
+        <!-- If the user is not yet signed in, they should be presented with the
+            options to sign in to a current account or sign up for a new account -->
       <% if !user_signed_in? %>
      <li> <%= link_to(t('navbar.sign_up'),new_user_registration_path)%></li>
      <li><%= link_to(t('navbar.sign_in'),new_user_session_path)%></li>
      <% end %>
      <li><%= link_to(t('navbar.contact_us'),contact_us_path)%></li>
+
+     <!-- If the current session involves a user that has signed in, they should
+          be presented with the option to logout of their account. If this is
+          selected then the current session should be successfully destroyed. -->
      <% if user_signed_in? %>
        <li>
      <%= link_to(t('navbar.sign_out'), destroy_user_session_path, method: :delete) %>

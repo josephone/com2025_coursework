@@ -1,10 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-
 <h1><%=t('navbar.contact_us')%></h1>
 
-<table>
-  <thead>
+
+<!-- The meta tags found within the head of the HTML section of the document are used to
+encourage best practices by including boilerplate constructs such as allowing for a constant zoom ratio,
+and to mention to a use if their browser requires an update to prevent any unwarranted errors -->
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><%=t('titles.app_title')%></title>
@@ -24,18 +26,17 @@ $(document).ready(function(){
     },
     click: function(){
       $(this).css("background-color", "lightyellow");
-    }  
+    }
   });
 });
 </script>
-  </thead>
+  </head>
 
-  <tbody>
+  <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  </tbody>
-</table>
+  </body>
 
 <br>
 

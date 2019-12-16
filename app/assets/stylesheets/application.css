@@ -12,11 +12,17 @@
  *
  *= require_tree .
  *= require_self
- @import 'bulma';
 
 */
 
+
 @import "bootstrap";
+
+/*
+Defines the styling for an unordered list to have a pleasing
+aesthetic that suits the design of the page
+*/
+
 ul {
  list-style-type: none;
  margin: 0;
@@ -28,6 +34,7 @@ ul {
 li{
   display: inline;
 }
+
 li a {
  display: inline-block;
  color: #000;
@@ -44,6 +51,11 @@ li a:hover {
 a{
   color: white;
 }
+
+/*
+Defines the overall colour scheme of the page and navigation bar
+*/
+
 nav{
   width: 100%;
   background-color: #0090c9;
@@ -51,6 +63,7 @@ nav{
 body{
   background-color: #99c0ff;
 }
+
 footer{
   position:absolute;
   bottom: 0;

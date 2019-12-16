@@ -2,10 +2,28 @@ require 'test_helper'
 
 class FilmsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
+
+
   setup do
     @film = films(:one)
     @user = users(:one)
   end
+
+    # Runs the test such that the contents of the page is checked to
+    # see that they appear as expected to the user
+
+test "should get film" do
+  get films_url
+  assert_response :success
+
+  assert_template layout: 'application'
+
+  assert_select 'title', 'Film Reviews'
+  assert_select 'h1', 'Films'
+
+end
+
+  # 
 
   test "should get new" do
     get new_film_url

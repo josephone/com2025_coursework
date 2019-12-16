@@ -3,6 +3,10 @@
 
 <h1><%=t('titles.home_page_title')%></h1>
 
+<!-- The meta tags found within the head of the HTML section of the document are used to
+encourage best practices by including boilerplate constructs such as allowing for a constant zoom ratio,
+and to mention to a use if their browser requires an update to prevent any unwarranted errors -->
+
 <table>
   <thead>
     <meta charset="utf-8">
@@ -22,7 +26,8 @@
 
   <tbody>
     <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <% @films.each do |film| %>
       <tr>
@@ -30,6 +35,9 @@
         <td><%= film.description %></td>
         <td><%= film.Length %></td>
         <td><%= link_to t('film_processes.show'), film %></td>
+
+        <!-- Checks to see whether the user has been signed in and if so they are able
+            to edit and delete films. If they have not signed in then these options will be hidden -->
         <% if user_signed_in? %>
           <li>
             <td><%= link_to t('film_processes.edit'), edit_film_path(film) %></td>
@@ -42,6 +50,9 @@
 </table>
 
 <br>
+
+<!-- Allows the user to create a new film review only if they are logged in. Otherwise they are
+    only allowed to view the database as it stands -->
 <% if user_signed_in? %>
 <%= link_to t('general.new_film'), new_film_path %>
 <% end %>

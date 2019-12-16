@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%=t('contact_form.name')+ ":"%> </strong>
   <%= @contact_u.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%=t('contact_form.email')%></strong>
   <%= @contact_u.email %>
 </p>
 
 <p>
-  <strong>Message: </strong>
+  <strong><%=t('contact_form.message')%></strong>
   <%= @contact_u.message %>
 </p>
 

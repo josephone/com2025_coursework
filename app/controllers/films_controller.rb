@@ -1,4 +1,9 @@
 class FilmsController < ApplicationController
+
+  # Appends a callback before actions take place in order to
+  # validate that a user is logged in before allowing certain
+  # actions to run
+
   before_action :set_film, only: [:show, :edit, :update, :destroy]
 
   # GET /films

@@ -1,14 +1,19 @@
+
+<!--Defines a mailer preview that can be viewed by typing: http://localhost:3000/rails/mailers/contact_mailer/contact_email
+  This is also used as the default setup of the email being sent -->
+
+
 <p>
   <%= "Dear #{t('titles.app_title')}," %>
 </p>
 <p>
   <%=t('contact.request_contact.heading_message')%>
 </p>
-<dtName>:</dtName>
+<dt><%=t('contact_form.name') + ":"%></dt>
 <dd>
   <%= @name %>
 </dd>
-<dt>Email:</dt>
+<dt><%=t('contact_form.email') + ":"%></dt>
 <dd>
   <%= @email %>
 </dd>

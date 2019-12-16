@@ -1,3 +1,9 @@
+  # States the RESTful verbs of each page and
+  # specifies the source path (URL) of a given
+  # page. routes.rb also defines where the
+  # user should be redirected to depending on the
+  # destination controller and accompanying method
+
 Rails.application.routes.draw do
   resources :contact_us
   get 'home/index'

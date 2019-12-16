@@ -1,3 +1,12 @@
+  <!-- This 'post' form is used for the contact us page
+  in order for the user to be able to submit their
+  own review of the movie. This will then call the
+  mailer upon the 'Submit' button being clicked.
+  I made this form as a partial in order to split the
+  contact us page up into more manageable parts
+  and allow me to debug and solve the problems that I
+  may be having in a more concise manner. -->
+
 <div class="container">
 <%= form_tag request_contact_path_path, method: 'post' do %>
   <%= label_tag :name, t('contact_form.name') + ":" %>
